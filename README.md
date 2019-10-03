@@ -1,13 +1,4 @@
----
-page_type: Samples
-languages:
-- YAML
-products:
-- [Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
-description: "Samples to configure code coverage settings for repos built using Azure Pipelines"
----
-
-# Official Microsoft Sample
+# Settings for Code Coverage reporting in Azure Pipelines
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
@@ -17,19 +8,20 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
 
-Azure Pipelines provides code coverage reporting. Code coverage reporting experience can be tweaked using a settings YAML file (named  azurepipelines-coverage.yml) included at the root of your repo. 
+[Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops) provides code coverage reporting. This experience can be tweaked using a settings YAML file (named  azurepipelines-coverage.yml) included at the root of your repo. 
 
-
-## Contents
-
-Each of the folders in this repo contain samples for a specific use case.
+Each of the folders in this repo contains a sample file for changing a setting.
 
 | File/folder                               | Description                                                                         |
 |-------------------------------------------|-------------------------------------------------------------------------------------|
-| `SetDiffCoverageTarget`                   | Change the coverage threshold for pull requests.                                    |
-| `EnableCoverageDetailComments`            | Details about lines covered/not covered for each code file in a pull request.       |
+| `SetDiffCoverageTarget`                   | Change the diff coverage threshold for pull requests.                               |
+| `EnableCoverageDetailComments`            | Post details about lines covered/not covered for each code file in a pull request.  |
 | `DisableCodeCoveragePullRequestStatus`    | Opt out of code coverage pull request capability.                                   |
 
+## Related docs
+
+* [Code coverage for pull requests](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/codecoverage-for-pullrequests?view=azure-devops)
+ 
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
