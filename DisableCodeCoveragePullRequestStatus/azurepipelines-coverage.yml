@@ -1,0 +1,2 @@
+coverage:
+  status: off     #When off, code coverage status checks will not be posted to pull requests and coverage annotations will not show in changed files view.
